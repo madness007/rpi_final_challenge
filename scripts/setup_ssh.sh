@@ -18,5 +18,6 @@ sudo install -d -m 700 /home/$username/.ssh
 echo "$key" > /home/$username/.ssh/authorized_keys
 sudo chmod 644 /home/$username/.ssh/authorized_keys
 sudo chown $username:$username /home/$username/.ssh/authorized_keys
+sudo chown $username:$username /home/$username/.ssh
 echo "this is the result in the keys file: "
 echo $(cat /home/$username/.ssh/authorized_keys)
