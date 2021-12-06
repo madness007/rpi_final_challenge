@@ -41,15 +41,16 @@ do
             echo "Enter username to add: "
             read username
             sudo adduser $username
-            echo "Do you want to add the user to the docker group?"
+            echo "Do you want to add the user to the docker and sudo group?"
             echo "press ENTER or CTRL+C to abort"
             read temp
-            sudo adduser -aG docker $username
+            sudo adduser $username docker
+            sudo adduser $username sudo
             ;;
         $opt6)
             echo "Enter groupname to add: "
             read groupname
-            sudo adduser $groupname
+            sudo addgroup $groupname
             echo "You can now add users with adduser <username> $groupname"
             ;;
         $opt7)
@@ -58,7 +59,7 @@ do
             sudo usermod -L $username
             ;;
         $opt8)
-            sudo ./setup_ssh.sh
+            ./setup_ssh.sh
             ;;
         $opt9)
             ./default_shell.sh
