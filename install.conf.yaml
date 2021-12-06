@@ -6,7 +6,7 @@
 
 - link:
     ~/.gitconfig: configs/git/gitconfig
-    ~/.bashrc: configs/bash/bashrc
+    ~/.backup.sh: configs/backup.sh
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

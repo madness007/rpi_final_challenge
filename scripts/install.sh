@@ -18,7 +18,9 @@ sudo apt install libssl-dev -y
 sudo apt install python3-dev -y
 sudo apt install python3 -y
 sudo apt install python3-pip -y
+sudo apt install -y mosquitto mosquitto-clients
 
+sudo systemctl enable mosquitto.service
 
 # The end
 pause "All done - rebooting now"

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+echo "Change default shell (for current user): "
+
+echo "These shells are available: "
+echo $(cat /etc/shells)
+
+sudo chown $username:$username /home/$username/.ssh/authorized_keys
