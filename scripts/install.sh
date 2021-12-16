@@ -8,6 +8,7 @@ pause "Ready to start installing the linux final exercise?"
 
 # Just add the commands below to start installing tools, dependencies, ...
 sudo apt update
+sudo apt upgrade
 sudo apt install git -y
 sudo apt install curl -y
 sudo apt install zsh -y
